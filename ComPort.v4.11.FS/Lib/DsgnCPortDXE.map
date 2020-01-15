@@ -1,0 +1,867 @@
+
+ Start         Length     Name                   Class
+ 0001:00401000 00002664H .text                   CODE
+ 0002:00404000 00000220H .itext                  ICODE
+ 0003:00405000 00000044H .data                   DATA
+ 0004:00406000 0000001CH .bss                    BSS
+ 0005:00000000 00000000H .tls                    TLS
+ 000A:00000000 00000000H .xdata                  PDATA
+
+
+Detailed map of segments
+
+ 0001:00000000 000000C0 C=CODE     S=.text    G=(none)   M=System   ACBP=A9
+ 0001:000000C0 000001C4 C=CODE     S=.text    G=(none)   M=SysInit  ACBP=A9
+ 0001:00000284 0000006C C=CODE     S=.text    G=(none)   M=Windows  ACBP=A9
+ 0001:000002F0 00000008 C=CODE     S=.text    G=(none)   M=ExcUtils ACBP=A9
+ 0001:000002F8 00000020 C=CODE     S=.text    G=(none)   M=SysUtils ACBP=A9
+ 0001:00000318 00000008 C=CODE     S=.text    G=(none)   M=VarUtils ACBP=A9
+ 0001:00000320 00000008 C=CODE     S=.text    G=(none)   M=Variants ACBP=A9
+ 0001:00000328 00000008 C=CODE     S=.text    G=(none)   M=TypInfo  ACBP=A9
+ 0001:00000330 00000050 C=CODE     S=.text    G=(none)   M=Classes  ACBP=A9
+ 0001:00000380 00000008 C=CODE     S=.text    G=(none)   M=TimeSpan ACBP=A9
+ 0001:00000388 00000008 C=CODE     S=.text    G=(none)   M=SyncObjs ACBP=A9
+ 0001:00000390 00000008 C=CODE     S=.text    G=(none)   M=DateUtils ACBP=A9
+ 0001:00000398 00000010 C=CODE     S=.text    G=(none)   M=IOUtils  ACBP=A9
+ 0001:000003A8 00000008 C=CODE     S=.text    G=(none)   M=IniFiles ACBP=A9
+ 0001:000003B0 00000008 C=CODE     S=.text    G=(none)   M=Registry ACBP=A9
+ 0001:000003B8 00000008 C=CODE     S=.text    G=(none)   M=Graphics ACBP=A9
+ 0001:000003C0 00000008 C=CODE     S=.text    G=(none)   M=ActnList ACBP=A9
+ 0001:000003C8 00000008 C=CODE     S=.text    G=(none)   M=HelpIntfs ACBP=A9
+ 0001:000003D0 00000008 C=CODE     S=.text    G=(none)   M=UxTheme  ACBP=A9
+ 0001:000003D8 00000008 C=CODE     S=.text    G=(none)   M=FlatSB   ACBP=A9
+ 0001:000003E0 00000008 C=CODE     S=.text    G=(none)   M=Printers ACBP=A9
+ 0001:000003E8 00000008 C=CODE     S=.text    G=(none)   M=Themes   ACBP=A9
+ 0001:000003F0 00000008 C=CODE     S=.text    G=(none)   M=GraphUtil ACBP=A9
+ 0001:000003F8 00000008 C=CODE     S=.text    G=(none)   M=ExtCtrls ACBP=A9
+ 0001:00000400 00000008 C=CODE     S=.text    G=(none)   M=ComCtrls ACBP=A9
+ 0001:00000408 00000018 C=CODE     S=.text    G=(none)   M=Dialogs  ACBP=A9
+ 0001:00000420 00000008 C=CODE     S=.text    G=(none)   M=Clipbrd  ACBP=A9
+ 0001:00000428 00000148 C=CODE     S=.text    G=(none)   M=Forms    ACBP=A9
+ 0001:00000570 00000008 C=CODE     S=.text    G=(none)   M=Menus    ACBP=A9
+ 0001:00000578 00000108 C=CODE     S=.text    G=(none)   M=Controls ACBP=A9
+ 0001:00000680 00000018 C=CODE     S=.text    G=(none)   M=DesignIntf ACBP=A9
+ 0001:00000698 00000008 C=CODE     S=.text    G=(none)   M=IDEMessages ACBP=A9
+ 0001:000006A0 00000008 C=CODE     S=.text    G=(none)   M=CaptionedDockTree ACBP=A9
+ 0001:000006A8 00000008 C=CODE     S=.text    G=(none)   M=Tabs     ACBP=A9
+ 0001:000006B0 00000008 C=CODE     S=.text    G=(none)   M=DockTabSet ACBP=A9
+ 0001:000006B8 00000008 C=CODE     S=.text    G=(none)   M=PercentageDockTree ACBP=A9
+ 0001:000006C0 00000010 C=CODE     S=.text    G=(none)   M=ComObj   ACBP=A9
+ 0001:000006D0 00000008 C=CODE     S=.text    G=(none)   M=Buttons  ACBP=A9
+ 0001:000006D8 00000008 C=CODE     S=.text    G=(none)   M=ExtDlgs  ACBP=A9
+ 0001:000006E0 00000008 C=CODE     S=.text    G=(none)   M=Mapi     ACBP=A9
+ 0001:000006E8 00000008 C=CODE     S=.text    G=(none)   M=ExtActns ACBP=A9
+ 0001:000006F0 00000008 C=CODE     S=.text    G=(none)   M=ActnMenus ACBP=A9
+ 0001:000006F8 00000008 C=CODE     S=.text    G=(none)   M=ActnMan  ACBP=A9
+ 0001:00000700 00000008 C=CODE     S=.text    G=(none)   M=PlatformDefaultStyleActnCtrls ACBP=A9
+ 0001:00000708 00000008 C=CODE     S=.text    G=(none)   M=TabDock  ACBP=A9
+ 0001:00000710 00000008 C=CODE     S=.text    G=(none)   M=BaseDock ACBP=A9
+ 0001:00000718 00000008 C=CODE     S=.text    G=(none)   M=DeskUtil ACBP=A9
+ 0001:00000720 00000008 C=CODE     S=.text    G=(none)   M=DeskForm ACBP=A9
+ 0001:00000728 00000008 C=CODE     S=.text    G=(none)   M=DockForm ACBP=A9
+ 0001:00000730 00000008 C=CODE     S=.text    G=(none)   M=msxmldom ACBP=A9
+ 0001:00000738 00000008 C=CODE     S=.text    G=(none)   M=xmldom   ACBP=A9
+ 0001:00000740 00000008 C=CODE     S=.text    G=(none)   M=XMLIntf  ACBP=A9
+ 0001:00000748 00000008 C=CODE     S=.text    G=(none)   M=ToolsAPI ACBP=A9
+ 0001:00000750 00000008 C=CODE     S=.text    G=(none)   M=Proxies  ACBP=A9
+ 0001:00000758 000000F8 C=CODE     S=.text    G=(none)   M=DesignEditors ACBP=A9
+ 0001:00000850 00000008 C=CODE     S=.text    G=(none)   M=PropertyCategories ACBP=A9
+ 0001:00000858 00000010 C=CODE     S=.text    G=(none)   M=CPortCtl ACBP=A9
+ 0001:00000868 00000018 C=CODE     S=.text    G=(none)   M=CPort    ACBP=A9
+ 0001:00000880 0000037C C=CODE     S=.text    G=(none)   M=CPortAbout ACBP=A9
+ 0001:00000BFC 00001590 C=CODE     S=.text    G=(none)   M=CPortReg ACBP=A9
+ 0001:0000218C 000004D8 C=CODE     S=.text    G=(none)   M=.DsgnCPortDXE ACBP=A9
+ 0002:00000000 00000008 C=ICODE    S=.itext   G=(none)   M=System   ACBP=A9
+ 0002:00000008 00000018 C=ICODE    S=.itext   G=(none)   M=Windows  ACBP=A9
+ 0002:00000020 00000008 C=ICODE    S=.itext   G=(none)   M=ExcUtils ACBP=A9
+ 0002:00000028 00000020 C=ICODE    S=.itext   G=(none)   M=SysUtils ACBP=A9
+ 0002:00000048 00000008 C=ICODE    S=.itext   G=(none)   M=VarUtils ACBP=A9
+ 0002:00000050 00000008 C=ICODE    S=.itext   G=(none)   M=Variants ACBP=A9
+ 0002:00000058 00000008 C=ICODE    S=.itext   G=(none)   M=TypInfo  ACBP=A9
+ 0002:00000060 00000018 C=ICODE    S=.itext   G=(none)   M=Classes  ACBP=A9
+ 0002:00000078 00000008 C=ICODE    S=.itext   G=(none)   M=TimeSpan ACBP=A9
+ 0002:00000080 00000008 C=ICODE    S=.itext   G=(none)   M=SyncObjs ACBP=A9
+ 0002:00000088 00000008 C=ICODE    S=.itext   G=(none)   M=DateUtils ACBP=A9
+ 0002:00000090 00000010 C=ICODE    S=.itext   G=(none)   M=IOUtils  ACBP=A9
+ 0002:000000A0 00000008 C=ICODE    S=.itext   G=(none)   M=IniFiles ACBP=A9
+ 0002:000000A8 00000008 C=ICODE    S=.itext   G=(none)   M=Registry ACBP=A9
+ 0002:000000B0 00000008 C=ICODE    S=.itext   G=(none)   M=Graphics ACBP=A9
+ 0002:000000B8 00000008 C=ICODE    S=.itext   G=(none)   M=ActnList ACBP=A9
+ 0002:000000C0 00000008 C=ICODE    S=.itext   G=(none)   M=HelpIntfs ACBP=A9
+ 0002:000000C8 00000008 C=ICODE    S=.itext   G=(none)   M=UxTheme  ACBP=A9
+ 0002:000000D0 00000008 C=ICODE    S=.itext   G=(none)   M=FlatSB   ACBP=A9
+ 0002:000000D8 00000008 C=ICODE    S=.itext   G=(none)   M=Printers ACBP=A9
+ 0002:000000E0 00000008 C=ICODE    S=.itext   G=(none)   M=Themes   ACBP=A9
+ 0002:000000E8 00000008 C=ICODE    S=.itext   G=(none)   M=GraphUtil ACBP=A9
+ 0002:000000F0 00000008 C=ICODE    S=.itext   G=(none)   M=ExtCtrls ACBP=A9
+ 0002:000000F8 00000008 C=ICODE    S=.itext   G=(none)   M=ComCtrls ACBP=A9
+ 0002:00000100 00000008 C=ICODE    S=.itext   G=(none)   M=Dialogs  ACBP=A9
+ 0002:00000108 00000008 C=ICODE    S=.itext   G=(none)   M=Clipbrd  ACBP=A9
+ 0002:00000110 00000008 C=ICODE    S=.itext   G=(none)   M=Forms    ACBP=A9
+ 0002:00000118 00000008 C=ICODE    S=.itext   G=(none)   M=Menus    ACBP=A9
+ 0002:00000120 00000008 C=ICODE    S=.itext   G=(none)   M=Controls ACBP=A9
+ 0002:00000128 00000008 C=ICODE    S=.itext   G=(none)   M=IDEMessages ACBP=A9
+ 0002:00000130 00000008 C=ICODE    S=.itext   G=(none)   M=CaptionedDockTree ACBP=A9
+ 0002:00000138 00000008 C=ICODE    S=.itext   G=(none)   M=Tabs     ACBP=A9
+ 0002:00000140 00000008 C=ICODE    S=.itext   G=(none)   M=DockTabSet ACBP=A9
+ 0002:00000148 00000008 C=ICODE    S=.itext   G=(none)   M=PercentageDockTree ACBP=A9
+ 0002:00000150 00000010 C=ICODE    S=.itext   G=(none)   M=ComObj   ACBP=A9
+ 0002:00000160 00000008 C=ICODE    S=.itext   G=(none)   M=Buttons  ACBP=A9
+ 0002:00000168 00000008 C=ICODE    S=.itext   G=(none)   M=ExtDlgs  ACBP=A9
+ 0002:00000170 00000008 C=ICODE    S=.itext   G=(none)   M=Mapi     ACBP=A9
+ 0002:00000178 00000008 C=ICODE    S=.itext   G=(none)   M=ExtActns ACBP=A9
+ 0002:00000180 00000008 C=ICODE    S=.itext   G=(none)   M=ActnMenus ACBP=A9
+ 0002:00000188 00000008 C=ICODE    S=.itext   G=(none)   M=ActnMan  ACBP=A9
+ 0002:00000190 00000008 C=ICODE    S=.itext   G=(none)   M=PlatformDefaultStyleActnCtrls ACBP=A9
+ 0002:00000198 00000008 C=ICODE    S=.itext   G=(none)   M=TabDock  ACBP=A9
+ 0002:000001A0 00000008 C=ICODE    S=.itext   G=(none)   M=BaseDock ACBP=A9
+ 0002:000001A8 00000008 C=ICODE    S=.itext   G=(none)   M=DeskUtil ACBP=A9
+ 0002:000001B0 00000008 C=ICODE    S=.itext   G=(none)   M=DeskForm ACBP=A9
+ 0002:000001B8 00000008 C=ICODE    S=.itext   G=(none)   M=DockForm ACBP=A9
+ 0002:000001C0 00000008 C=ICODE    S=.itext   G=(none)   M=msxmldom ACBP=A9
+ 0002:000001C8 00000008 C=ICODE    S=.itext   G=(none)   M=xmldom   ACBP=A9
+ 0002:000001D0 00000008 C=ICODE    S=.itext   G=(none)   M=XMLIntf  ACBP=A9
+ 0002:000001D8 00000008 C=ICODE    S=.itext   G=(none)   M=ToolsAPI ACBP=A9
+ 0002:000001E0 00000008 C=ICODE    S=.itext   G=(none)   M=Proxies  ACBP=A9
+ 0002:000001E8 00000008 C=ICODE    S=.itext   G=(none)   M=DesignEditors ACBP=A9
+ 0002:000001F0 00000008 C=ICODE    S=.itext   G=(none)   M=PropertyCategories ACBP=A9
+ 0002:000001F8 00000008 C=ICODE    S=.itext   G=(none)   M=CPortCtl ACBP=A9
+ 0002:00000200 00000008 C=ICODE    S=.itext   G=(none)   M=CPort    ACBP=A9
+ 0002:00000208 00000008 C=ICODE    S=.itext   G=(none)   M=CPortAbout ACBP=A9
+ 0002:00000210 00000008 C=ICODE    S=.itext   G=(none)   M=CPortReg ACBP=A9
+ 0002:00000218 00000008 C=ICODE    S=.itext   G=(none)   M=.DsgnCPortDXE ACBP=A9
+ 0003:00000000 00000034 C=DATA     S=.data    G=DGROUP   M=SysInit  ACBP=A9
+ 0003:00000034 0000000C C=DATA     S=.data    G=DGROUP   M=Windows  ACBP=A9
+ 0004:00000000 0000000C C=BSS      S=.bss     G=DGROUP   M=SysInit  ACBP=A9
+ 0004:0000000C 00000008 C=BSS      S=.bss     G=DGROUP   M=Windows  ACBP=A9
+ 0004:00000014 00000004 C=BSS      S=.bss     G=DGROUP   M=CPortAbout ACBP=A9
+ 0004:00000018 00000004 C=BSS      S=.bss     G=DGROUP   M=CPortReg ACBP=A9
+
+
+  Address             Publics by Name
+
+ 0002:00000218       .DsgnCPortDXE..DsgnCPortDXE
+ 0001:00002644       .DsgnCPortDXE.@GetPackageInfoTable
+ 0001:0000264C       .DsgnCPortDXE.@PackageLoad
+ 0001:00002658       .DsgnCPortDXE.@PackageUnload
+ 0002:000000B8       ActnList.ActnList
+ 0001:000003C0       ActnList.Finalization
+ 0002:00000188       ActnMan.ActnMan
+ 0001:000006F8       ActnMan.Finalization
+ 0002:00000180       ActnMenus.ActnMenus
+ 0001:000006F0       ActnMenus.Finalization
+ 0002:000001A0       BaseDock.BaseDock
+ 0001:00000710       BaseDock.Finalization
+ 0002:00000160       Buttons.Buttons
+ 0001:000006D0       Buttons.Finalization
+ 0002:00000130       CaptionedDockTree.CaptionedDockTree
+ 0001:000006A0       CaptionedDockTree.Finalization
+ 0002:00000070       Classes.Classes
+ 0001:00000378       Classes.Finalization
+ 0001:00000330       Classes.RegisterComponents
+ 0002:00000060       Classes.TBinaryWriter.Create@
+ 0001:00000370       Classes.TBinaryWriter.Destroy@
+ 0001:00000360       Classes.TComponent.SafeCallException
+ 0001:00000358       Classes.TComponent.UpdateAction
+ 0001:00000368       Classes.TComponent.UpdateRegistry
+ 0001:00000350       Classes.TComponent.WriteState
+ 0001:00000338       Classes.TPersistent.Assign
+ 0001:00000340       Classes.TStringList.Create
+ 0002:00000068       Classes.TThread.Create@
+ 0001:00000348       Classes.TThread.Destroy@
+ 0002:00000108       Clipbrd.Clipbrd
+ 0001:00000420       Clipbrd.Finalization
+ 0002:000000F8       ComCtrls.ComCtrls
+ 0001:00000400       ComCtrls.Finalization
+ 0002:00000158       ComObj.ComObj
+ 0001:000006C8       ComObj.Finalization
+ 0002:00000150       ComObj.TComServerObject.Create@
+ 0001:000006C0       ComObj.TComServerObject.Destroy@
+ 0002:00000120       Controls.Controls
+ 0001:00000678       Controls.Finalization
+ 0001:000005C0       Controls.TControl.CreateTouchManager
+ 0001:00000588       Controls.TControl.GetAction
+ 0001:00000578       Controls.TControl.GetDragImages
+ 0001:00000580       Controls.TControl.GetEnabled
+ 0001:000005C8       Controls.TControl.GetFloatingDockSiteClass
+ 0001:000005D0       Controls.TControl.InitiateAction
+ 0001:00000598       Controls.TControl.SetAutoSize
+ 0001:000005B8       Controls.TControl.SetBiDiMode
+ 0001:00000590       Controls.TControl.SetDragMode
+ 0001:000005A8       Controls.TControl.SetEnabled
+ 0001:000005A0       Controls.TControl.SetName
+ 0001:000005B0       Controls.TControl.SetText
+ 0001:00000650       Controls.TWinControl.AssignTo
+ 0001:00000658       Controls.TWinControl.CanAutoSize
+ 0001:00000640       Controls.TWinControl.CanResize
+ 0001:00000648       Controls.TWinControl.ConstrainedResize
+ 0001:000005E0       Controls.TWinControl.CreateHandle
+ 0001:000005E8       Controls.TWinControl.CustomAlignInsertBefore
+ 0001:000005F0       Controls.TWinControl.CustomAlignPosition
+ 0001:000005D8       Controls.TWinControl.DestroyWnd
+ 0001:00000668       Controls.TWinControl.DockReplaceDockClient
+ 0001:00000638       Controls.TWinControl.GetClientOrigin
+ 0001:00000630       Controls.TWinControl.GetControlExtents
+ 0001:00000610       Controls.TWinControl.GetDeviceContext
+ 0001:00000618       Controls.TWinControl.Invalidate
+ 0001:00000628       Controls.TWinControl.Repaint
+ 0001:00000600       Controls.TWinControl.SetBounds
+ 0001:00000660       Controls.TWinControl.SetParentBackground
+ 0001:000005F8       Controls.TWinControl.SetParentDoubleBuffered
+ 0001:00000608       Controls.TWinControl.ShowControl
+ 0001:00000620       Controls.TWinControl.Update
+ 0001:00000670       Controls.TWinControl.UpdateControlOriginalParentSize
+ 0002:00000200       CPort.CPort
+ 0001:00000870       CPort.EnumComPorts
+ 0001:00000878       CPort.Finalization
+ 0001:00000868       CPort.TCustomComPort.ShowSetupDialog
+ 0004:00000014       CPortAbout..2
+ 0001:00000880       CPortAbout..TAboutBox
+ 0002:00000208       CPortAbout.CPortAbout
+ 0001:00000BF4       CPortAbout.Finalization
+ 0001:00000B94       CPortAbout.ShowAbout
+ 0001:00000BB8       CPortAbout.TAboutBox.FormCreate
+ 0002:000001F8       CPortCtl.CPortCtl
+ 0001:00000860       CPortCtl.Finalization
+ 0001:00000858       CPortCtl.TCustomComTerminal.ShowSetupDialog
+ 0004:00000018       CPortReg..6
+ 0001:00001224       CPortReg..TComFontProperty
+ 0001:00000BFC       CPortReg..TComLibraryEditor
+ 0001:00000D78       CPortReg..TComPortEditor
+ 0001:000010C8       CPortReg..TComPortProperty
+ 0001:00000F1C       CPortReg..TComTerminalEditor
+ 0002:00000210       CPortReg.CPortReg
+ 0001:00002184       CPortReg.Finalization
+ 0001:000016E4       CPortReg.Register
+ 0001:00001648       CPortReg.TComFontProperty.Edit
+ 0001:000016D8       CPortReg.TComFontProperty.GetAttributes
+ 0001:0000136C       CPortReg.TComLibraryEditor.ExecuteVerb
+ 0001:00001378       CPortReg.TComLibraryEditor.GetVerb
+ 0001:000013D8       CPortReg.TComLibraryEditor.GetVerbCount
+ 0001:000013E0       CPortReg.TComPortEditor.Edit
+ 0001:0000143C       CPortReg.TComPortEditor.ExecuteVerb
+ 0001:00001458       CPortReg.TComPortEditor.GetVerb
+ 0001:000014A8       CPortReg.TComPortEditor.GetVerbCount
+ 0001:000015AC       CPortReg.TComPortProperty.GetAttributes
+ 0001:000015B8       CPortReg.TComPortProperty.GetValues
+ 0001:000014B8       CPortReg.TComTerminalEditor.Edit
+ 0001:00001514       CPortReg.TComTerminalEditor.ExecuteVerb
+ 0001:00001530       CPortReg.TComTerminalEditor.GetVerb
+ 0001:0000159C       CPortReg.TComTerminalEditor.GetVerbCount
+ 0002:00000088       DateUtils.TTimeZone.Create@
+ 0001:00000390       DateUtils.TTimeZone.Destroy@
+ 0002:000001E8       DesignEditors.DesignEditors
+ 0001:00000848       DesignEditors.Finalization
+ 0001:00000810       DesignEditors.TClassProperty.GetProperties
+ 0001:00000818       DesignEditors.TClassProperty.GetValue
+ 0001:00000838       DesignEditors.TComponentEditor.Copy
+ 0001:00000820       DesignEditors.TComponentEditor.Create
+ 0001:00000828       DesignEditors.TComponentEditor.Edit
+ 0001:00000830       DesignEditors.TComponentEditor.GetDesigner
+ 0001:00000840       DesignEditors.TComponentEditor.PrepareItem
+ 0001:00000768       DesignEditors.TPropertyEditor.Activate
+ 0001:00000770       DesignEditors.TPropertyEditor.AllEqual
+ 0001:00000780       DesignEditors.TPropertyEditor.AutoFill
+ 0001:00000758       DesignEditors.TPropertyEditor.Create
+ 0001:00000760       DesignEditors.TPropertyEditor.Destroy
+ 0001:00000778       DesignEditors.TPropertyEditor.Edit
+ 0001:00000788       DesignEditors.TPropertyEditor.GetEditLimit
+ 0001:000007E8       DesignEditors.TPropertyEditor.GetIsDefault
+ 0001:00000790       DesignEditors.TPropertyEditor.GetName
+ 0001:00000798       DesignEditors.TPropertyEditor.GetOrdValue
+ 0001:000007A0       DesignEditors.TPropertyEditor.GetProperties
+ 0001:000007A8       DesignEditors.TPropertyEditor.GetPropInfo
+ 0001:000007B8       DesignEditors.TPropertyEditor.GetValues
+ 0001:000007B0       DesignEditors.TPropertyEditor.GetValueW
+ 0001:000007C0       DesignEditors.TPropertyEditor.Initialize
+ 0001:000007C8       DesignEditors.TPropertyEditor.SetOrdValue
+ 0001:000007D0       DesignEditors.TPropertyEditor.SetPropEntry
+ 0001:000007E0       DesignEditors.TPropertyEditor.SetValue
+ 0001:000007D8       DesignEditors.TPropertyEditor.SetValue
+ 0001:000007F0       DesignEditors.TStringProperty.AllEqual
+ 0001:000007F8       DesignEditors.TStringProperty.GetEditLimit
+ 0001:00000800       DesignEditors.TStringProperty.GetValue
+ 0001:00000808       DesignEditors.TStringProperty.SetValue
+ 0001:00000688       DesignIntf.RegisterComponentEditor
+ 0001:00000680       DesignIntf.RegisterPropertiesInCategory
+ 0001:00000690       DesignIntf.RegisterPropertyEditor
+ 0002:000001B0       DeskForm.DeskForm
+ 0001:00000720       DeskForm.Finalization
+ 0002:000001A8       DeskUtil.DeskUtil
+ 0001:00000718       DeskUtil.Finalization
+ 0002:00000100       Dialogs.Dialogs
+ 0001:00000418       Dialogs.Finalization
+ 0001:00000408       Dialogs.TFontDialog.Create
+ 0001:00000410       Dialogs.TFontDialog.SetFont
+ 0002:000001B8       DockForm.DockForm
+ 0001:00000728       DockForm.Finalization
+ 0002:00000140       DockTabSet.DockTabSet
+ 0001:000006B0       DockTabSet.Finalization
+ 0002:00000020       ExcUtils.ExcUtils
+ 0001:000002F0       ExcUtils.Finalization
+ 0002:00000178       ExtActns.ExtActns
+ 0001:000006E8       ExtActns.Finalization
+ 0002:000000F0       ExtCtrls.ExtCtrls
+ 0001:000003F8       ExtCtrls.Finalization
+ 0002:00000168       ExtDlgs.ExtDlgs
+ 0001:000006D8       ExtDlgs.Finalization
+ 0001:000003D8       FlatSB.Finalization
+ 0002:000000D0       FlatSB.FlatSB
+ 0001:00000568       Forms.Finalization
+ 0002:00000110       Forms.Forms
+ 0001:00000458       Forms.TCustomForm.AfterConstruction
+ 0001:000004E8       Forms.TCustomForm.AlignControls
+ 0001:00000468       Forms.TCustomForm.BeforeDestruction
+ 0001:000004E0       Forms.TCustomForm.ClientWndProc
+ 0001:00000538       Forms.TCustomForm.CloseQuery
+ 0001:00000450       Forms.TCustomForm.Create
+ 0001:00000460       Forms.TCustomForm.CreateNew
+ 0001:000004F0       Forms.TCustomForm.CreateParams
+ 0001:00000500       Forms.TCustomForm.CreateWindowHandle
+ 0001:000004F8       Forms.TCustomForm.CreateWnd
+ 0001:00000518       Forms.TCustomForm.DefaultHandler
+ 0001:000004A0       Forms.TCustomForm.DefineProperties
+ 0001:00000470       Forms.TCustomForm.Destroy
+ 0001:00000508       Forms.TCustomForm.DestroyHandle
+ 0001:00000510       Forms.TCustomForm.DestroyWindowHandle
+ 0001:00000478       Forms.TCustomForm.DoCreate
+ 0001:00000480       Forms.TCustomForm.DoDestroy
+ 0001:000004A8       Forms.TCustomForm.GetClientRect
+ 0001:000004B0       Forms.TCustomForm.GetFloating
+ 0001:00000488       Forms.TCustomForm.Loaded
+ 0001:00000490       Forms.TCustomForm.Notification
+ 0001:00000528       Forms.TCustomForm.PaintWindow
+ 0001:00000560       Forms.TCustomForm.QueryInterface
+ 0001:00000498       Forms.TCustomForm.ReadState
+ 0001:00000558       Forms.TCustomForm.RequestAlign
+ 0001:00000530       Forms.TCustomForm.Resizing
+ 0001:00000540       Forms.TCustomForm.SetFocus
+ 0001:00000520       Forms.TCustomForm.SetFocusedControl
+ 0001:000004C8       Forms.TCustomForm.SetParent
+ 0001:000004B8       Forms.TCustomForm.SetParentBiDiMode
+ 0001:00000548       Forms.TCustomForm.ShowModal
+ 0001:00000550       Forms.TCustomForm.UpdateActions
+ 0001:000004D0       Forms.TCustomForm.ValidateRename
+ 0001:000004C0       Forms.TCustomForm.WantChildKey
+ 0001:000004D8       Forms.TCustomForm.WndProc
+ 0001:00000448       Forms.TScrollingWinControl.AdjustClientRect
+ 0001:00000428       Forms.TScrollingWinControl.AutoScrollEnabled
+ 0001:00000440       Forms.TScrollingWinControl.AutoScrollInView
+ 0001:00000430       Forms.TScrollingWinControl.DoGesture
+ 0001:00000438       Forms.TScrollingWinControl.DoGetGestureOptions
+ 0001:000003B8       Graphics.Finalization
+ 0002:000000B0       Graphics.Graphics
+ 0001:000003F0       GraphUtil.Finalization
+ 0002:000000E8       GraphUtil.GraphUtil
+ 0001:000003C8       HelpIntfs.Finalization
+ 0002:000000C0       HelpIntfs.HelpIntfs
+ 0001:00000698       IDEMessages.Finalization
+ 0002:00000128       IDEMessages.IDEMessages
+ 0001:000003A8       IniFiles.Finalization
+ 0002:000000A0       IniFiles.IniFiles
+ 0001:000003A0       IOUtils.Finalization
+ 0002:00000098       IOUtils.IOUtils
+ 0002:00000090       IOUtils.TPath.Create@
+ 0001:00000398       IOUtils.TPath.Destroy@
+ 0001:000006E0       Mapi.Finalization
+ 0002:00000170       Mapi.Mapi
+ 0001:00000570       Menus.Finalization
+ 0002:00000118       Menus.Menus
+ 0001:00000730       msxmldom.Finalization
+ 0002:000001C0       msxmldom.msxmldom
+ 0001:000006B8       PercentageDockTree.Finalization
+ 0002:00000148       PercentageDockTree.PercentageDockTree
+ 0001:00000700       PlatformDefaultStyleActnCtrls.Finalization
+ 0002:00000190       PlatformDefaultStyleActnCtrls.PlatformDefaultStyleActnCtrls
+ 0001:000003E0       Printers.Finalization
+ 0002:000000D8       Printers.Printers
+ 0001:00000850       PropertyCategories.Finalization
+ 0002:000001F0       PropertyCategories.PropertyCategories
+ 0001:00000750       Proxies.Finalization
+ 0002:000001E0       Proxies.Proxies
+ 0001:000003B0       Registry.Finalization
+ 0002:000000A8       Registry.Registry
+ 0001:00000388       SyncObjs.Finalization
+ 0002:00000080       SyncObjs.SyncObjs
+ 0001:00000208       SysInit.@InitPkg
+ 0001:0000026C       SysInit.@PackageLoad
+ 0001:00000278       SysInit.@PackageUnload
+ 0001:000000F8       SysInit.AllocTlsBuffer
+ 0001:000001B4       SysInit.ExitProcessTLS
+ 0001:0000017C       SysInit.ExitThreadTLS
+ 0001:000000C0       SysInit.FreeLibrary
+ 0001:00000104       SysInit.GetTlsSize
+ 0004:00000004       SysInit.HInstance
+ 0001:000001D8       SysInit.InitializeModule
+ 0001:00000150       SysInit.InitProcessTLS
+ 0001:0000010C       SysInit.InitThreadTLS
+ 0001:000000C8       SysInit.LocalAlloc
+ 0001:000000D0       SysInit.LocalFree
+ 0003:00000008       SysInit.Module
+ 0004:00000000       SysInit.ModuleIsLib
+ 0004:00000001       SysInit.ModuleIsPackage
+ 0003:00000004       SysInit.PtrToNil
+ 0001:000000D8       SysInit.TlsAlloc
+ 0004:00000008       SysInit.tlsBuffer
+ 0001:000000E0       SysInit.TlsFree
+ 0001:000000E8       SysInit.TlsGetValue
+ 0003:00000000       SysInit.TlsIndex
+ 0005:00000000       SysInit.TlsLast
+ 0003:00000024       SysInit.TlsProc
+ 0001:000000F0       SysInit.TlsSetValue
+ 0001:000001E4       SysInit.UninitializeModule
+ 0001:00000030       System.@AsClass
+ 0001:00000058       System.@HandleFinally
+ 0001:00000098       System.@IntfClear
+ 0001:00000060       System.@PackageLoad
+ 0001:00000068       System.@PackageUnload
+ 0001:00000070       System.@RunError
+ 0001:00000080       System.@UStrAsg
+ 0001:00000078       System.@UStrClr
+ 0001:000000B8       System.Finalization
+ 0001:00000088       System.RegisterModule
+ 0002:00000000       System.System
+ 0001:000000A0       System.TInterfacedObject.AfterConstruction
+ 0001:000000A8       System.TInterfacedObject.BeforeDestruction
+ 0001:000000B0       System.TInterfacedObject.NewInstance
+ 0001:00000048       System.TObject.DefaultHandler
+ 0001:00000010       System.TObject.Destroy
+ 0001:00000050       System.TObject.Dispatch
+ 0001:00000020       System.TObject.Equals
+ 0001:00000018       System.TObject.Free
+ 0001:00000008       System.TObject.FreeInstance
+ 0001:00000028       System.TObject.GetHashCode
+ 0001:00000000       System.TObject.NewInstance
+ 0001:00000038       System.TObject.SafeCallException
+ 0001:00000040       System.TObject.ToString
+ 0001:00000090       System.UnregisterModule
+ 0002:00000038       SysUtils.Exception.Create@
+ 0001:000002F8       SysUtils.Exception.Destroy@
+ 0001:00000310       SysUtils.Finalization
+ 0002:00000040       SysUtils.SysUtils
+ 0002:00000030       SysUtils.TEncoding.Create@
+ 0001:00000308       SysUtils.TEncoding.Destroy@
+ 0002:00000028       SysUtils.TLanguages.Create@
+ 0001:00000300       SysUtils.TLanguages.Destroy@
+ 0001:00000708       TabDock.Finalization
+ 0002:00000198       TabDock.TabDock
+ 0001:000006A8       Tabs.Finalization
+ 0002:00000138       Tabs.Tabs
+ 0001:000003E8       Themes.Finalization
+ 0002:000000E0       Themes.Themes
+ 0002:00000078       TimeSpan.TTimeSpan.Create@
+ 0001:00000380       TimeSpan.TTimeSpan.Destroy@
+ 0001:00000748       ToolsAPI.Finalization
+ 0002:000001D8       ToolsAPI.ToolsAPI
+ 0001:00000328       TypInfo.Finalization
+ 0002:00000058       TypInfo.TypInfo
+ 0001:000003D0       UxTheme.Finalization
+ 0002:000000C8       UxTheme.UxTheme
+ 0001:00000320       Variants.Finalization
+ 0002:00000050       Variants.Variants
+ 0001:00000318       VarUtils.Finalization
+ 0002:00000048       VarUtils.VarUtils
+ 0004:0000000C       Windows..2
+ 0001:000002D0       Windows.Finalization
+ 0001:00000284       Windows.FreeLibrary
+ 0001:0000028C       Windows.GetVersionEx
+ 0004:00000010       Windows.HtmlHelpModule
+ 0001:00000294       Windows.InitVersionInfo
+ 0003:00000034       Windows.Win32MajorVersion
+ 0003:00000038       Windows.Win32MinorVersion
+ 0003:0000003C       Windows.Win32Platform
+ 0002:00000008       Windows.Windows
+ 0001:00000738       xmldom.Finalization
+ 0002:000001C8       xmldom.xmldom
+ 0001:00000740       XMLIntf.Finalization
+ 0002:000001D0       XMLIntf.XMLIntf
+
+
+  Address             Publics by Value
+
+ 0001:00000000       System.TObject.NewInstance
+ 0001:00000008       System.TObject.FreeInstance
+ 0001:00000010       System.TObject.Destroy
+ 0001:00000018       System.TObject.Free
+ 0001:00000020       System.TObject.Equals
+ 0001:00000028       System.TObject.GetHashCode
+ 0001:00000030       System.@AsClass
+ 0001:00000038       System.TObject.SafeCallException
+ 0001:00000040       System.TObject.ToString
+ 0001:00000048       System.TObject.DefaultHandler
+ 0001:00000050       System.TObject.Dispatch
+ 0001:00000058       System.@HandleFinally
+ 0001:00000060       System.@PackageLoad
+ 0001:00000068       System.@PackageUnload
+ 0001:00000070       System.@RunError
+ 0001:00000078       System.@UStrClr
+ 0001:00000080       System.@UStrAsg
+ 0001:00000088       System.RegisterModule
+ 0001:00000090       System.UnregisterModule
+ 0001:00000098       System.@IntfClear
+ 0001:000000A0       System.TInterfacedObject.AfterConstruction
+ 0001:000000A8       System.TInterfacedObject.BeforeDestruction
+ 0001:000000B0       System.TInterfacedObject.NewInstance
+ 0001:000000B8       System.Finalization
+ 0001:000000C0       SysInit.FreeLibrary
+ 0001:000000C8       SysInit.LocalAlloc
+ 0001:000000D0       SysInit.LocalFree
+ 0001:000000D8       SysInit.TlsAlloc
+ 0001:000000E0       SysInit.TlsFree
+ 0001:000000E8       SysInit.TlsGetValue
+ 0001:000000F0       SysInit.TlsSetValue
+ 0001:000000F8       SysInit.AllocTlsBuffer
+ 0001:00000104       SysInit.GetTlsSize
+ 0001:0000010C       SysInit.InitThreadTLS
+ 0001:00000150       SysInit.InitProcessTLS
+ 0001:0000017C       SysInit.ExitThreadTLS
+ 0001:000001B4       SysInit.ExitProcessTLS
+ 0001:000001D8       SysInit.InitializeModule
+ 0001:000001E4       SysInit.UninitializeModule
+ 0001:00000208       SysInit.@InitPkg
+ 0001:0000026C       SysInit.@PackageLoad
+ 0001:00000278       SysInit.@PackageUnload
+ 0001:00000284       Windows.FreeLibrary
+ 0001:0000028C       Windows.GetVersionEx
+ 0001:00000294       Windows.InitVersionInfo
+ 0001:000002D0       Windows.Finalization
+ 0001:000002F0       ExcUtils.Finalization
+ 0001:000002F8       SysUtils.Exception.Destroy@
+ 0001:00000300       SysUtils.TLanguages.Destroy@
+ 0001:00000308       SysUtils.TEncoding.Destroy@
+ 0001:00000310       SysUtils.Finalization
+ 0001:00000318       VarUtils.Finalization
+ 0001:00000320       Variants.Finalization
+ 0001:00000328       TypInfo.Finalization
+ 0001:00000330       Classes.RegisterComponents
+ 0001:00000338       Classes.TPersistent.Assign
+ 0001:00000340       Classes.TStringList.Create
+ 0001:00000348       Classes.TThread.Destroy@
+ 0001:00000350       Classes.TComponent.WriteState
+ 0001:00000358       Classes.TComponent.UpdateAction
+ 0001:00000360       Classes.TComponent.SafeCallException
+ 0001:00000368       Classes.TComponent.UpdateRegistry
+ 0001:00000370       Classes.TBinaryWriter.Destroy@
+ 0001:00000378       Classes.Finalization
+ 0001:00000380       TimeSpan.TTimeSpan.Destroy@
+ 0001:00000388       SyncObjs.Finalization
+ 0001:00000390       DateUtils.TTimeZone.Destroy@
+ 0001:00000398       IOUtils.TPath.Destroy@
+ 0001:000003A0       IOUtils.Finalization
+ 0001:000003A8       IniFiles.Finalization
+ 0001:000003B0       Registry.Finalization
+ 0001:000003B8       Graphics.Finalization
+ 0001:000003C0       ActnList.Finalization
+ 0001:000003C8       HelpIntfs.Finalization
+ 0001:000003D0       UxTheme.Finalization
+ 0001:000003D8       FlatSB.Finalization
+ 0001:000003E0       Printers.Finalization
+ 0001:000003E8       Themes.Finalization
+ 0001:000003F0       GraphUtil.Finalization
+ 0001:000003F8       ExtCtrls.Finalization
+ 0001:00000400       ComCtrls.Finalization
+ 0001:00000408       Dialogs.TFontDialog.Create
+ 0001:00000410       Dialogs.TFontDialog.SetFont
+ 0001:00000418       Dialogs.Finalization
+ 0001:00000420       Clipbrd.Finalization
+ 0001:00000428       Forms.TScrollingWinControl.AutoScrollEnabled
+ 0001:00000430       Forms.TScrollingWinControl.DoGesture
+ 0001:00000438       Forms.TScrollingWinControl.DoGetGestureOptions
+ 0001:00000440       Forms.TScrollingWinControl.AutoScrollInView
+ 0001:00000448       Forms.TScrollingWinControl.AdjustClientRect
+ 0001:00000450       Forms.TCustomForm.Create
+ 0001:00000458       Forms.TCustomForm.AfterConstruction
+ 0001:00000460       Forms.TCustomForm.CreateNew
+ 0001:00000468       Forms.TCustomForm.BeforeDestruction
+ 0001:00000470       Forms.TCustomForm.Destroy
+ 0001:00000478       Forms.TCustomForm.DoCreate
+ 0001:00000480       Forms.TCustomForm.DoDestroy
+ 0001:00000488       Forms.TCustomForm.Loaded
+ 0001:00000490       Forms.TCustomForm.Notification
+ 0001:00000498       Forms.TCustomForm.ReadState
+ 0001:000004A0       Forms.TCustomForm.DefineProperties
+ 0001:000004A8       Forms.TCustomForm.GetClientRect
+ 0001:000004B0       Forms.TCustomForm.GetFloating
+ 0001:000004B8       Forms.TCustomForm.SetParentBiDiMode
+ 0001:000004C0       Forms.TCustomForm.WantChildKey
+ 0001:000004C8       Forms.TCustomForm.SetParent
+ 0001:000004D0       Forms.TCustomForm.ValidateRename
+ 0001:000004D8       Forms.TCustomForm.WndProc
+ 0001:000004E0       Forms.TCustomForm.ClientWndProc
+ 0001:000004E8       Forms.TCustomForm.AlignControls
+ 0001:000004F0       Forms.TCustomForm.CreateParams
+ 0001:000004F8       Forms.TCustomForm.CreateWnd
+ 0001:00000500       Forms.TCustomForm.CreateWindowHandle
+ 0001:00000508       Forms.TCustomForm.DestroyHandle
+ 0001:00000510       Forms.TCustomForm.DestroyWindowHandle
+ 0001:00000518       Forms.TCustomForm.DefaultHandler
+ 0001:00000520       Forms.TCustomForm.SetFocusedControl
+ 0001:00000528       Forms.TCustomForm.PaintWindow
+ 0001:00000530       Forms.TCustomForm.Resizing
+ 0001:00000538       Forms.TCustomForm.CloseQuery
+ 0001:00000540       Forms.TCustomForm.SetFocus
+ 0001:00000548       Forms.TCustomForm.ShowModal
+ 0001:00000550       Forms.TCustomForm.UpdateActions
+ 0001:00000558       Forms.TCustomForm.RequestAlign
+ 0001:00000560       Forms.TCustomForm.QueryInterface
+ 0001:00000568       Forms.Finalization
+ 0001:00000570       Menus.Finalization
+ 0001:00000578       Controls.TControl.GetDragImages
+ 0001:00000580       Controls.TControl.GetEnabled
+ 0001:00000588       Controls.TControl.GetAction
+ 0001:00000590       Controls.TControl.SetDragMode
+ 0001:00000598       Controls.TControl.SetAutoSize
+ 0001:000005A0       Controls.TControl.SetName
+ 0001:000005A8       Controls.TControl.SetEnabled
+ 0001:000005B0       Controls.TControl.SetText
+ 0001:000005B8       Controls.TControl.SetBiDiMode
+ 0001:000005C0       Controls.TControl.CreateTouchManager
+ 0001:000005C8       Controls.TControl.GetFloatingDockSiteClass
+ 0001:000005D0       Controls.TControl.InitiateAction
+ 0001:000005D8       Controls.TWinControl.DestroyWnd
+ 0001:000005E0       Controls.TWinControl.CreateHandle
+ 0001:000005E8       Controls.TWinControl.CustomAlignInsertBefore
+ 0001:000005F0       Controls.TWinControl.CustomAlignPosition
+ 0001:000005F8       Controls.TWinControl.SetParentDoubleBuffered
+ 0001:00000600       Controls.TWinControl.SetBounds
+ 0001:00000608       Controls.TWinControl.ShowControl
+ 0001:00000610       Controls.TWinControl.GetDeviceContext
+ 0001:00000618       Controls.TWinControl.Invalidate
+ 0001:00000620       Controls.TWinControl.Update
+ 0001:00000628       Controls.TWinControl.Repaint
+ 0001:00000630       Controls.TWinControl.GetControlExtents
+ 0001:00000638       Controls.TWinControl.GetClientOrigin
+ 0001:00000640       Controls.TWinControl.CanResize
+ 0001:00000648       Controls.TWinControl.ConstrainedResize
+ 0001:00000650       Controls.TWinControl.AssignTo
+ 0001:00000658       Controls.TWinControl.CanAutoSize
+ 0001:00000660       Controls.TWinControl.SetParentBackground
+ 0001:00000668       Controls.TWinControl.DockReplaceDockClient
+ 0001:00000670       Controls.TWinControl.UpdateControlOriginalParentSize
+ 0001:00000678       Controls.Finalization
+ 0001:00000680       DesignIntf.RegisterPropertiesInCategory
+ 0001:00000688       DesignIntf.RegisterComponentEditor
+ 0001:00000690       DesignIntf.RegisterPropertyEditor
+ 0001:00000698       IDEMessages.Finalization
+ 0001:000006A0       CaptionedDockTree.Finalization
+ 0001:000006A8       Tabs.Finalization
+ 0001:000006B0       DockTabSet.Finalization
+ 0001:000006B8       PercentageDockTree.Finalization
+ 0001:000006C0       ComObj.TComServerObject.Destroy@
+ 0001:000006C8       ComObj.Finalization
+ 0001:000006D0       Buttons.Finalization
+ 0001:000006D8       ExtDlgs.Finalization
+ 0001:000006E0       Mapi.Finalization
+ 0001:000006E8       ExtActns.Finalization
+ 0001:000006F0       ActnMenus.Finalization
+ 0001:000006F8       ActnMan.Finalization
+ 0001:00000700       PlatformDefaultStyleActnCtrls.Finalization
+ 0001:00000708       TabDock.Finalization
+ 0001:00000710       BaseDock.Finalization
+ 0001:00000718       DeskUtil.Finalization
+ 0001:00000720       DeskForm.Finalization
+ 0001:00000728       DockForm.Finalization
+ 0001:00000730       msxmldom.Finalization
+ 0001:00000738       xmldom.Finalization
+ 0001:00000740       XMLIntf.Finalization
+ 0001:00000748       ToolsAPI.Finalization
+ 0001:00000750       Proxies.Finalization
+ 0001:00000758       DesignEditors.TPropertyEditor.Create
+ 0001:00000760       DesignEditors.TPropertyEditor.Destroy
+ 0001:00000768       DesignEditors.TPropertyEditor.Activate
+ 0001:00000770       DesignEditors.TPropertyEditor.AllEqual
+ 0001:00000778       DesignEditors.TPropertyEditor.Edit
+ 0001:00000780       DesignEditors.TPropertyEditor.AutoFill
+ 0001:00000788       DesignEditors.TPropertyEditor.GetEditLimit
+ 0001:00000790       DesignEditors.TPropertyEditor.GetName
+ 0001:00000798       DesignEditors.TPropertyEditor.GetOrdValue
+ 0001:000007A0       DesignEditors.TPropertyEditor.GetProperties
+ 0001:000007A8       DesignEditors.TPropertyEditor.GetPropInfo
+ 0001:000007B0       DesignEditors.TPropertyEditor.GetValueW
+ 0001:000007B8       DesignEditors.TPropertyEditor.GetValues
+ 0001:000007C0       DesignEditors.TPropertyEditor.Initialize
+ 0001:000007C8       DesignEditors.TPropertyEditor.SetOrdValue
+ 0001:000007D0       DesignEditors.TPropertyEditor.SetPropEntry
+ 0001:000007D8       DesignEditors.TPropertyEditor.SetValue
+ 0001:000007E0       DesignEditors.TPropertyEditor.SetValue
+ 0001:000007E8       DesignEditors.TPropertyEditor.GetIsDefault
+ 0001:000007F0       DesignEditors.TStringProperty.AllEqual
+ 0001:000007F8       DesignEditors.TStringProperty.GetEditLimit
+ 0001:00000800       DesignEditors.TStringProperty.GetValue
+ 0001:00000808       DesignEditors.TStringProperty.SetValue
+ 0001:00000810       DesignEditors.TClassProperty.GetProperties
+ 0001:00000818       DesignEditors.TClassProperty.GetValue
+ 0001:00000820       DesignEditors.TComponentEditor.Create
+ 0001:00000828       DesignEditors.TComponentEditor.Edit
+ 0001:00000830       DesignEditors.TComponentEditor.GetDesigner
+ 0001:00000838       DesignEditors.TComponentEditor.Copy
+ 0001:00000840       DesignEditors.TComponentEditor.PrepareItem
+ 0001:00000848       DesignEditors.Finalization
+ 0001:00000850       PropertyCategories.Finalization
+ 0001:00000858       CPortCtl.TCustomComTerminal.ShowSetupDialog
+ 0001:00000860       CPortCtl.Finalization
+ 0001:00000868       CPort.TCustomComPort.ShowSetupDialog
+ 0001:00000870       CPort.EnumComPorts
+ 0001:00000878       CPort.Finalization
+ 0001:00000880       CPortAbout..TAboutBox
+ 0001:00000B94       CPortAbout.ShowAbout
+ 0001:00000BB8       CPortAbout.TAboutBox.FormCreate
+ 0001:00000BF4       CPortAbout.Finalization
+ 0001:00000BFC       CPortReg..TComLibraryEditor
+ 0001:00000D78       CPortReg..TComPortEditor
+ 0001:00000F1C       CPortReg..TComTerminalEditor
+ 0001:000010C8       CPortReg..TComPortProperty
+ 0001:00001224       CPortReg..TComFontProperty
+ 0001:0000136C       CPortReg.TComLibraryEditor.ExecuteVerb
+ 0001:00001378       CPortReg.TComLibraryEditor.GetVerb
+ 0001:000013D8       CPortReg.TComLibraryEditor.GetVerbCount
+ 0001:000013E0       CPortReg.TComPortEditor.Edit
+ 0001:0000143C       CPortReg.TComPortEditor.ExecuteVerb
+ 0001:00001458       CPortReg.TComPortEditor.GetVerb
+ 0001:000014A8       CPortReg.TComPortEditor.GetVerbCount
+ 0001:000014B8       CPortReg.TComTerminalEditor.Edit
+ 0001:00001514       CPortReg.TComTerminalEditor.ExecuteVerb
+ 0001:00001530       CPortReg.TComTerminalEditor.GetVerb
+ 0001:0000159C       CPortReg.TComTerminalEditor.GetVerbCount
+ 0001:000015AC       CPortReg.TComPortProperty.GetAttributes
+ 0001:000015B8       CPortReg.TComPortProperty.GetValues
+ 0001:00001648       CPortReg.TComFontProperty.Edit
+ 0001:000016D8       CPortReg.TComFontProperty.GetAttributes
+ 0001:000016E4       CPortReg.Register
+ 0001:00002184       CPortReg.Finalization
+ 0001:00002644       .DsgnCPortDXE.@GetPackageInfoTable
+ 0001:0000264C       .DsgnCPortDXE.@PackageLoad
+ 0001:00002658       .DsgnCPortDXE.@PackageUnload
+ 0002:00000000       System.System
+ 0002:00000008       Windows.Windows
+ 0002:00000020       ExcUtils.ExcUtils
+ 0002:00000028       SysUtils.TLanguages.Create@
+ 0002:00000030       SysUtils.TEncoding.Create@
+ 0002:00000038       SysUtils.Exception.Create@
+ 0002:00000040       SysUtils.SysUtils
+ 0002:00000048       VarUtils.VarUtils
+ 0002:00000050       Variants.Variants
+ 0002:00000058       TypInfo.TypInfo
+ 0002:00000060       Classes.TBinaryWriter.Create@
+ 0002:00000068       Classes.TThread.Create@
+ 0002:00000070       Classes.Classes
+ 0002:00000078       TimeSpan.TTimeSpan.Create@
+ 0002:00000080       SyncObjs.SyncObjs
+ 0002:00000088       DateUtils.TTimeZone.Create@
+ 0002:00000090       IOUtils.TPath.Create@
+ 0002:00000098       IOUtils.IOUtils
+ 0002:000000A0       IniFiles.IniFiles
+ 0002:000000A8       Registry.Registry
+ 0002:000000B0       Graphics.Graphics
+ 0002:000000B8       ActnList.ActnList
+ 0002:000000C0       HelpIntfs.HelpIntfs
+ 0002:000000C8       UxTheme.UxTheme
+ 0002:000000D0       FlatSB.FlatSB
+ 0002:000000D8       Printers.Printers
+ 0002:000000E0       Themes.Themes
+ 0002:000000E8       GraphUtil.GraphUtil
+ 0002:000000F0       ExtCtrls.ExtCtrls
+ 0002:000000F8       ComCtrls.ComCtrls
+ 0002:00000100       Dialogs.Dialogs
+ 0002:00000108       Clipbrd.Clipbrd
+ 0002:00000110       Forms.Forms
+ 0002:00000118       Menus.Menus
+ 0002:00000120       Controls.Controls
+ 0002:00000128       IDEMessages.IDEMessages
+ 0002:00000130       CaptionedDockTree.CaptionedDockTree
+ 0002:00000138       Tabs.Tabs
+ 0002:00000140       DockTabSet.DockTabSet
+ 0002:00000148       PercentageDockTree.PercentageDockTree
+ 0002:00000150       ComObj.TComServerObject.Create@
+ 0002:00000158       ComObj.ComObj
+ 0002:00000160       Buttons.Buttons
+ 0002:00000168       ExtDlgs.ExtDlgs
+ 0002:00000170       Mapi.Mapi
+ 0002:00000178       ExtActns.ExtActns
+ 0002:00000180       ActnMenus.ActnMenus
+ 0002:00000188       ActnMan.ActnMan
+ 0002:00000190       PlatformDefaultStyleActnCtrls.PlatformDefaultStyleActnCtrls
+ 0002:00000198       TabDock.TabDock
+ 0002:000001A0       BaseDock.BaseDock
+ 0002:000001A8       DeskUtil.DeskUtil
+ 0002:000001B0       DeskForm.DeskForm
+ 0002:000001B8       DockForm.DockForm
+ 0002:000001C0       msxmldom.msxmldom
+ 0002:000001C8       xmldom.xmldom
+ 0002:000001D0       XMLIntf.XMLIntf
+ 0002:000001D8       ToolsAPI.ToolsAPI
+ 0002:000001E0       Proxies.Proxies
+ 0002:000001E8       DesignEditors.DesignEditors
+ 0002:000001F0       PropertyCategories.PropertyCategories
+ 0002:000001F8       CPortCtl.CPortCtl
+ 0002:00000200       CPort.CPort
+ 0002:00000208       CPortAbout.CPortAbout
+ 0002:00000210       CPortReg.CPortReg
+ 0002:00000218       .DsgnCPortDXE..DsgnCPortDXE
+ 0003:00000000       SysInit.TlsIndex
+ 0003:00000004       SysInit.PtrToNil
+ 0003:00000008       SysInit.Module
+ 0003:00000024       SysInit.TlsProc
+ 0003:00000034       Windows.Win32MajorVersion
+ 0003:00000038       Windows.Win32MinorVersion
+ 0003:0000003C       Windows.Win32Platform
+ 0004:00000000       SysInit.ModuleIsLib
+ 0004:00000001       SysInit.ModuleIsPackage
+ 0004:00000004       SysInit.HInstance
+ 0004:00000008       SysInit.tlsBuffer
+ 0004:0000000C       Windows..2
+ 0004:00000010       Windows.HtmlHelpModule
+ 0004:00000014       CPortAbout..2
+ 0004:00000018       CPortReg..6
+ 0005:00000000       SysInit.TlsLast
+
+
+Line numbers for CPortAbout(CPortAbout.pas) segment .text
+
+    47 0001:00000B94    48 0001:00000B95    50 0001:00000BA5    51 0001:00000BAF
+    53 0001:00000BB6    57 0001:00000BB8    58 0001:00000BC8
+
+Line numbers for CPortAbout(CPortAbout.pas) segment .itext
+
+    60 0002:00000208
+
+Line numbers for CPortReg(CPortReg.pas) segment .text
+
+   124 0001:0000136C   125 0001:00001370   126 0001:00001375   129 0001:00001378
+   130 0001:0000137B   131 0001:0000137F   132 0001:0000138B   136 0001:000013D8
+   137 0001:000013DD   153 0001:000013E0   154 0001:000013F6   155 0001:00001409
+   156 0001:0000141B   159 0001:0000143C   160 0001:00001442   161 0001:0000144B
+   162 0001:0000144E   163 0001:00001455   176 0001:00001458   177 0001:00001461
+   178 0001:0000146C   179 0001:0000146F   180 0001:0000147B   183 0001:000014A8
+   184 0001:000014AB   185 0001:000014B3   192 0001:000014B8   193 0001:000014CE
+   194 0001:000014E1   195 0001:000014F3   198 0001:00001514   199 0001:0000151A
+   200 0001:00001523   201 0001:00001526   202 0001:0000152D   215 0001:00001530
+   216 0001:00001539   217 0001:00001544   218 0001:00001547   219 0001:00001553
+   222 0001:0000159C   223 0001:0000159F   224 0001:000015A7   232 0001:000015AC
+   233 0001:000015B3   239 0001:000015B8   240 0001:000015D4   241 0001:000015E2
+   242 0001:000015E9   243 0001:000015FF   242 0001:00001618   244 0001:0000161B
+   245 0001:00001622   254 0001:00001648   255 0001:0000164F   256 0001:00001666
+   257 0001:00001674   258 0001:00001685   259 0001:0000169A   261 0001:000016C0
+   263 0001:000016D0   267 0001:000016D8   268 0001:000016DF   345 0001:000016E4
+   346 0001:000016EA   348 0001:00001730   349 0001:00001740   350 0001:00001750
+   351 0001:00001760   352 0001:00001770   353 0001:00001780   354 0001:00001790
+   355 0001:000017AB   375 0001:000017C6   381 0001:000018D5   383 0001:00001921
+   385 0001:00001976   387 0001:000019A7   391 0001:00001A38
+
+Line numbers for CPortReg(CPortReg.pas) segment .itext
+
+   393 0002:00000210
+
+Line numbers for .DsgnCPortDXE(DsgnCPortDXE.dpk) segment .itext
+
+    38 0002:00000218
+
+Bound resource files
+
+CPortAbout.dfm
+CPortImg.res
+DsgnCPortDXE.res
+C:\TEMP\dtf1518.tmp
+
+
+Program entry point at 0002:00000218

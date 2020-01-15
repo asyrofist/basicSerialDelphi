@@ -1,0 +1,9 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<BorlandProject>
+	<Transactions>
+    <Transaction>2013/07/10 14:02:47.000.686,=C:\Users\UKRIT\Documents\RAD Studio\Projects\Unit1.pas</Transaction>
+    <Transaction>2013/07/10 14:03:49.000.207,C:\Users\UKRIT\Documents\RAD Studio\Projects\Unit1.dfm=D:\Delphi_XE_Project\[CPort]\Basic_Serial_1\UfrmMain.dfm</Transaction>
+    <Transaction>2013/07/10 14:03:49.000.207,C:\Users\UKRIT\Documents\RAD Studio\Projects\Unit1.pas=D:\Delphi_XE_Project\[CPort]\Basic_Serial_1\UfrmMain.pas</Transaction>
+    <Transaction>2013/07/10 14:03:55.000.071,C:\Users\UKRIT\Documents\RAD Studio\Projects\Project1.dproj=D:\Delphi_XE_Project\[CPort]\Basic_Serial_1\Basic_Serial_1.dproj</Transaction>
+  </Transactions>
+</BorlandProject>
